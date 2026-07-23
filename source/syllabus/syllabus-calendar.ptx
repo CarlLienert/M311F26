@@ -8,16 +8,13 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 1.7, Into to Limits</cell>
+            <cell>Monday</cell> <cell>Section 1.1</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 1.8, One-sided limits, asymptotes</cell>
+            <cell>Wednesday</cell> <cell>Section 1.2</cell>
         </row>
         <row>
-            <cell>Wednesday</cell> <cell>Section 1.9, Algebra of limits</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 1.9, 2.1, Idea of derivative</cell>
+            <cell>Friday</cell> <cell>Section 1.3</cell>
         </row>
     </tabular>
     </p>
@@ -28,16 +25,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 2.1, 2.2, Derivatives at a point</cell>
+            <cell>Monday</cell> <cell>Section 1.4</cell>
+        </row>
+    
+        <row>
+            <cell>Wednesday</cell> <cell>Section 1.5</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 2.2, 2.3, Derivatives as a function</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 2.3</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 2.4, Interpretation of the derivative</cell>
+            <cell>Friday</cell> <cell>Section 1.6</cell>
         </row>
     </tabular>
     </p>
@@ -48,16 +43,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 2.5, Second derivative</cell>
+            <cell>Monday</cell> <cell>Section 1.7</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Section 1.8</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 3.1, Powers and polynomials</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 3.1</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 3.2, Exponentials</cell>
+            <cell>Friday</cell> <cell>Section 1.9</cell>
         </row>
     </tabular>
     </p>
@@ -68,16 +61,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 3.3, Product rules</cell>
+            <cell>Monday</cell> <cell>Section 1.10</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Section 2.1</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 3.3, Quotient rules</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Exam 1</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 3.4, Chain rule</cell>
+            <cell>Friday</cell> <cell>Section 2.2</cell>
         </row>
     </tabular>
     </p>
@@ -88,16 +79,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 3.4, 3.5, Trig functions</cell>
+            <cell>Monday</cell> <cell>Exam 1</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Section 2.3</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 3.5</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 3.6, Inverse functions</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 3.6</cell>
+            <cell>Friday</cell> <cell>Section 2.4</cell>
         </row>
     </tabular>
     </p>
@@ -108,16 +97,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 3.7, Implicit derivatives</cell>
+            <cell>Monday</cell> <cell>Section 2.5</cell>
+        </row>
+       
+        <row>
+            <cell>Wednesday</cell> <cell>Sections 3.1 and 3.2</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 3.7</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 4.6, Related rates</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 4.6</cell>
+            <cell>Friday</cell> <cell>Section 3.3</cell>
         </row>
     </tabular>
     </p>
@@ -128,16 +115,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 4.7, L'Hospital's Rule</cell>
+            <cell>Monday</cell> <cell>Section 4.1</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Section 4.2</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 3.9, Linear approximation</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 3.9, Linear approximation</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 4.1, Critical points</cell>
+            <cell>Friday</cell> <cell>Section 4.3</cell>
         </row>
     </tabular>
     </p>
@@ -150,14 +135,12 @@
         <row>
             <cell>Monday</cell> <cell>Mini-break</cell>
         </row>
+       
         <row>
-            <cell>Tuesday</cell> <cell>Section 4.1</cell>
+            <cell>Wednesday</cell> <cell>Section 4.4</cell>
         </row>
         <row>
-            <cell>Wednesday</cell> <cell>Exam 2</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 4.2, Optimization</cell>
+            <cell>Friday</cell> <cell>Sections 4.5 and 4.6</cell>
         </row>
     </tabular>
     </p>
@@ -168,16 +151,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 4.3, Applied optimization</cell>
+            <cell>Monday</cell> <cell>Section 4.7</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Exam 2</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 4.3</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 4.3</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 5.1, Distance travelled</cell>
+            <cell>Friday</cell> <cell>Section 5.1</cell>
         </row>
     </tabular>
     </p>
@@ -190,16 +171,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 5.2, Definite integral</cell>
+            <cell>Monday</cell> <cell>Sections 5.2 and 5.3</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Section 5.4</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 5.2</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 5.3, Fundamental Theorem of Calculus</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 5.3</cell>
+            <cell>Friday</cell> <cell>Section 5.5</cell>
         </row>
     </tabular>
     </p>
@@ -210,16 +189,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 5.4, Properties of definite integrals</cell>
+            <cell>Monday</cell> <cell>Section 5.6</cell>
+        </row>
+        
+        <row>
+            <cell>Wednesday</cell> <cell>Section 5.8</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 5.4, 6.1, Antiderivatives</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 6.1</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 6.2, Constructing antiderivatives</cell>
+            <cell>Friday</cell> <cell>Section 6.1</cell>
         </row>
     </tabular>
     </p>
@@ -232,14 +209,12 @@
         <row>
             <cell>Monday</cell> <cell>Section 6.2</cell>
         </row>
+        
         <row>
-            <cell>Tuesday</cell> <cell>Section 6.3, Differential equations</cell>
+            <cell>Wednesday</cell> <cell>Section 6.3</cell>
         </row>
         <row>
-            <cell>Wednesday</cell> <cell>Exam 3</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 6.3</cell>
+            <cell>Friday</cell> <cell>Sections 6.4 and 6.5</cell>
         </row>
     </tabular>
     </p>
@@ -250,16 +225,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 6.4, Second FTC</cell>
+            <cell>Monday</cell> <cell>Section 6.6</cell>
+        </row>
+     
+        <row>
+            <cell>Wednesday</cell> <cell>Section 6.7</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 6.4</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Section 7.1, Integration by substitution</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Section 7.1</cell>
+            <cell>Friday</cell> <cell>Exam 3</cell>
         </row>
     </tabular>
     </p>
@@ -274,16 +247,14 @@
     <p>
     <tabular>
         <row>
-            <cell>Monday</cell> <cell>Section 7.2, Integration by parts</cell>
+            <cell>Monday</cell> <cell>TBD</cell>
+        </row>
+       
+        <row>
+            <cell>Wednesday</cell> <cell>TBD</cell>
         </row>
         <row>
-            <cell>Tuesday</cell> <cell>Section 7.2</cell>
-        </row>
-        <row>
-            <cell>Wednesday</cell> <cell>Sections 7.1, 7.2</cell>
-        </row>
-        <row>
-            <cell>Friday</cell> <cell>Review</cell>
+            <cell>Friday</cell> <cell>TBD</cell>
         </row>
     </tabular>
     </p>

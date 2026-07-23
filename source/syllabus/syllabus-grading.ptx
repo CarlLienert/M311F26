@@ -9,10 +9,10 @@
         <cell>Assignment Category</cell> <cell>Weight</cell>
       </row>
       <row>
-        <cell>Webwork (Online Homework System)</cell> <cell>15%</cell>
+        <cell>MyLab Online Homework </cell> <cell>15%</cell>
       </row>
       <row>
-        <cell>Weekly Quizzes</cell> <cell>15%</cell>
+        <cell>Weekly Quizzes (will drop lowest 2 quiz scores) </cell> <cell>15%</cell>
       </row>
       <row>
         <cell>Three Midterm Exams</cell> <cell>16% each</cell>
@@ -68,39 +68,30 @@
 
   
   <paragraphs xml:id="webwork">
-    <title>Webwork</title>
+    <title>MyLab</title>
     <p>
-      Webwork is our online homework system. An account has been created for you and a link posted on Canvas. You should check Webwork every class day for new assignments. Their due dates are posted with the assignment. Typically, Webwork assignments will be due at 11:59pm two business days after that section's material has been completed in class. Thus, we have the following:
+     Homework will be assigned and completed via MyLab.  This is integrated within Canvas.
     </p>
-    <tabular>
-      <row header="yes">
-        <cell>Day</cell><cell>Day Due</cell>
-      </row>
-      <row>
-        <cell>Monday</cell><cell>Wednesday</cell>
-      </row>
-      <row>
-      <cell>Tuesday</cell><cell>Thursday</cell>
-      </row>
-      <row>
-        <cell>Wednesday</cell><cell>Friday</cell>
-      </row>
-      <row>
-        <cell>Friday</cell><cell>Tuesday</cell>
-      </row>
-    </tabular>
+    
     <p>
-      After the due date there will be a reduced credit period until the next exam for each Webwork assignment in which you can receive 75% credit on all work completed.
-    </p>
-    <p>
-      Because online homework tells you if your answer is right or wrong as soon as you submit it, and for most questions you will be allowed multiple submissions, doing online homework may take you longer than doing written homework. So, give yourself plenty of time by starting your homework ASAP after it is assigned. This will give you time to do the assignment and get help if you need it.
+      It is important to keep on pace, so homework will typically be due before the next class meeting.
     </p>
   </paragraphs>
   <paragraphs xml:id="weekly-activities">
     <title>Weekly Quizzes</title>
     <p>
-      There will be at least one quiz each non-exam week. To account for the potential for missed quizzes due to unforseen circumstances, we will drop the lowest 2 scores at the end of the term. If you are an athlete and know in advance that you will miss a quiz, please arrange to make it up <term>before</term> the quiz day.
+      There will be at least one quiz each non-exam week.  These may be unannounced.  Questions on the quizzes will be similar to those on the homework.  If you can answer the homework questions, you will be able to answer the quiz questions. Keep in mind that no electronic devices are allowed during quizzes.
+
     </p>
+
+    <p>
+      
+      
+      To account for missed quizzes due to unforseen circumstances, I will drop the lowest 2 scores at the end of the term.  No make-up quizzes.
+      
+    </p>
+    
+    
   </paragraphs>
 <!--
   <paragraphs xml:id="engagement">
@@ -114,13 +105,30 @@
   <paragraphs xml:id="midterm-exams">
     <title>Midterm Exams</title>
     <p>
-      There will be three midterm exams 5:30 to 7:00pm on 16-September, 14-October, and 11-November. The class day of exams will be reserved for review. The location of the exam will be announced in class.
+      There will be three midterm exams: 
+      <ul>
+        <li>
+          <p>
+            Monday, 21-September
+          </p>
+        </li>
+        <li>
+          <p>
+            Wednesday, 21-October
+          </p>
+        </li>
+        <li>
+          <p>
+            Friday, 20-November (this is the Friday before break, please do no plan to leave early)
+          </p>
+        </li>
+      </ul>
     </p>
   </paragraphs>
   <paragraphs xml:id="final">
     <title>Cumulative Final Exam</title>
     <p>
-      Your cumulative final exam will be Wednesday, 9-December, from 7:30-9:30am. The room will be announced prior to the final exam.
+      Your cumulative final exam will be Tuesday, 8-December, from 7:30-9:30am. 
     </p>
   </paragraphs>
 </section>
