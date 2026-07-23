@@ -5,12 +5,12 @@
       <dl>
         <li><title>Course Title</title>
           <p>
-            Calculus I
+            Matrices and Linear Algebra
           </p>
         </li>
         <li><title>Course Number</title>
           <p>
-            MATH 221
+            MATH 311
           </p>
         </li>
         <li><title>Credits</title>
@@ -22,29 +22,16 @@
         <!--e.g.-->
         <ul>
         <li>  
-          <em>Section 1:</em> 8:00-8:50am, MWF EBH 065, T Berndt 340
+          <em>Section 1:</em> 9:05-10:00am, MWF Berndt 340
         </li>
-        <li>
-            <em>Section 3:</em> 10:10-11:05am, MTWF Berndt 340
-        </li>
-        <li>
-            <em>Section 2:</em> 12:20pm-1:15pm, MTWF EBH 060
-        </li>
-        <li>
-            <em>Section 4:</em> 2:30-3:25pm, MTWF Berndt 340
-        </li>
+        
       </ul>
     </li>
-        <li><title>Instructors</title>
+        <li><title>Instructor</title>
           <ul>
             <li>
               <p>
-                <em>Section 1 and 2 - </em> Carl Lienert (<url href="mailto:lienert_c@fortlewis.edu">lienert_c@fortlewis.edu</url>)
-              </p>
-            </li>
-            <li>
-              <p>
-                <em>Sections 3 and 4 - </em> Raed Abdullah (<url href="mailto:rabdullah@fortlewis.edu">rabdullah@fortlewis.edu</url>)
+                Carl Lienert (<url href="mailto:lienert_c@fortlewis.edu">lienert_c@fortlewis.edu</url>)
               </p>
             </li>
           </ul>        

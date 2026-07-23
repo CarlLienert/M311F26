@@ -7,8 +7,8 @@
 
   <article xml:id="syllabus">
     <!--Enter appropriate course title-->
-    <title>Calculus I Syllabus</title>
-    <subtitle>Math 221 - Fall 2026</subtitle>
+    <title>Matrices and Linear Algebra Syllabus</title>
+    <subtitle>Math 311 - Fall 2026</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
