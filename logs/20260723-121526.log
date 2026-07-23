@@ -1,0 +1,79 @@
+INFO    : Building target activities-print
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.38', 'publisher': '/Users/lienert_c/Documents/GitHub/M311F26/publication/publication-activities.ptx'}
+INFO    : discovering source file's directory name: /Users/lienert_c/Documents/GitHub/M311F26/source
+INFO    : verifying and expanding input directory: /Users/lienert_c/Documents/GitHub/M311F26/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/lienert_c/Documents/GitHub/M311F26/generated-assets
+INFO    : verifying and expanding input directory: /Users/lienert_c/Documents/GitHub/M311F26/source/../assets
+INFO    : input directory expanded to absolute path: /Users/lienert_c/Documents/GitHub/M311F26/assets
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-pg.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-pg.xsl
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/pretext-ww-problem-sets.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/pretext-ww-problem-sets.xsl
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/support/pretext-pg-macros.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/support/pretext-pg-macros.xsl
+INFO    : validating, cleaning server URL: https://webwork-ptx.aimath.org
+INFO    : building representations of webwork2-hosted WeBWorK problem
+INFO    : sending webwork-1 to server to save in /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/webwork/webwork-representations.xml: origin is 'webwork2'
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-o1eefj0k
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-caqdf85z
+INFO    : Finished generating assets.
+
+INFO    : downloading MyOpenMath static problems from /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx for placement in /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/problems
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-mom.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-mom.xsl
+INFO    : downloading MOM #15220 to /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/problems/mom-15220.xml...
+INFO    : MyOpenMath static problem download complete
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-roc7ixpp
+INFO    : converting PreFigure diagrams from /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx to PDF graphics for placement in /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/prefigure
+INFO    : extracting PreFigure diagrams from /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-prefigure.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-prefigure.xsl
+ERROR   : Unable to generate some prefigure images:
+ PTX ERROR: the "prefig" module has failed to load, and
+  this is necessary for the task you have requested.  Perhaps
+  you have not installed it?  Or perhaps you have forgotten to
+  use a Python virtual environment you set up for this purpose?
+INFO    : Checking for update for required playwright chromium browser.
+CRITICAL: Unable to install required playwright packages.  Please see the documentation.
+CRITICAL: [Errno 2] No such file or directory: 'playwright'
+INFO    : using playwright package to create previews for interactives from /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx for placement in /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/preview
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-interactive.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-interactive.xsl
+INFO    : Closing http.server thread
+ERROR   : Unable to generate some interactive previews: 
+There is no current event loop in thread 'MainThread'.
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : manufacturing QR codes from /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx for placement in /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/qrcode
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-qrcode.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/extract-qrcode.xsl
+INFO    : creating URL with content "https://eamcalister.github.io/FLCMathSampleCourse/worksheets/desmos-shift-reflect-int.html" as /Users/lienert_c/Documents/GitHub/M311F26/generated-assets/qrcode/desmos-shift-reflect-int.png...
+INFO    : QR code creation complete
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-_5vnfro_
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-2rfoicx5
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-hnpgnhp2
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-7toei1mr
+INFO    : Preparing to build into /Users/lienert_c/Documents/GitHub/M311F26/output/activities-print.
+INFO    : converting /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx to LaTeX as /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-_sohouwl/activities.tex
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/activities.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/pretext-latex.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/pretext-latex.xsl
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-_sohouwl
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-syj6ddhz
+INFO    : Removing temporary directory /var/folders/z9/f7bxmfjx4tvfcs_nzdg6b4sjx5rxgp/T/ptx-3qcykox2
+INFO    : 
+Finished build for target activities-print. The output is in /Users/lienert_c/Documents/GitHub/M311F26/output/activities-print.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

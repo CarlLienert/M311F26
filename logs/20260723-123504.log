@@ -1,0 +1,26 @@
+INFO    : Staging deployment according to strategy pelican_default
+INFO    : Staging `syllabus-web` at `/Users/lienert_c/Documents/GitHub/M311F26/output/stage/syllabus`.
+WARNING : No build for `activities-web` was found in the directory `/Users/lienert_c/Documents/GitHub/M311F26/output/activities-web`.Try running `pretext build activities-web` to build this component first.
+INFO    : Skipping this target for now.
+WARNING : No build for `notes-web` was found in the directory `/Users/lienert_c/Documents/GitHub/M311F26/output/notes-web`.Try running `pretext build notes-web` to build this component first.
+INFO    : Staging generated site at `/Users/lienert_c/Documents/GitHub/M311F26/output/stage`.
+INFO    : XSL conversion of /Users/lienert_c/Documents/GitHub/M311F26/source/syllabus.ptx by /Users/lienert_c/.ptx/2.38.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/lienert_c/.ptx/2.38.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Deployment is now staged at `/Users/lienert_c/Documents/GitHub/M311F26/output/stage`.
+INFO    : Preparing to deploy from active `main` git branch.
+
+INFO    : Committing your latest build to the `gh-pages` branch.
+INFO    : 
+INFO    : Attempting to connect to remote repository at `https://github.com/CarlLienert/HunterM221S26Test-main.git`...
+INFO    : Latest build successfully pushed to GitHub!
+
+INFO    : To enable GitHub Pages, visit
+INFO    :     https://github.com/CarlLienert/HunterM221S26Test-main/settings/pages
+INFO    : selecting the `gh-pages` branch with the `/ (root)` folder.
+
+INFO    : Visit
+INFO    :     https://github.com/CarlLienert/HunterM221S26Test-main/actions/
+INFO    : to check on the status of your GitHub Pages deployment.
+
+INFO    : Your built project will soon be available to the public at:
+INFO    :     https://CarlLienert.github.io/HunterM221S26Test-main/
