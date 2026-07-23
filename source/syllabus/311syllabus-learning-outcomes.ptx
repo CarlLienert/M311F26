@@ -3,50 +3,174 @@
   <!--This version of the learning outcomes is for Math 121 and is GTPathways compliant.-->
   <paragraphs xml:id="clos">
     <title>Course Learning Outcomes</title>
+
     <p>
-      <ul>
-        <li>
-          <p>
-            Interpret limits graphically and describe limiting behavior verbally.
-          </p>
-        </li>
-        <li>
-          <p>
-            Compute limits for functions with horizontal and vertical asymptotes, removable singularities,and regular points.
-          </p>
-        </li>
-        <li>
-          <p>
-            Infer properties of a function given a graphical or verbal description.
-          </p>
-        </li>
-        <li>
-          <p>
-            Compute the derivative of power, exponential, trigonometric functions, their inverses, as well as functions that are products, quotients, or compositions of elementary functions.
-          </p>
-        </li>
-        <li>
-          <p>
-            Apply theory and techniques of differentiation in the contexts of implicit differentiation, linear approximation, optimization, related rates and L'Hopital's rule.
-          </p>
-        </li>
-        <li>
-          <p>
-            Approximate areas using Riemann sums, compute definite integrals of piecewise linear (or circular) functions geometrically, and deduce properties of the definite integral from its geometric definition.
-          </p>
-        </li>
-        <li>
-          <p>
-            Interpret accumulation functions <m>F(x) = \int_0^xf(t)dt</m> geometrically, and use the Fundamental Theorem of Calculus to connect accumulation functions as described above with antiderivatives.
-          </p>
-        </li>
-        <li>
-          <p>
-            Compute antiderivatives of power, exponential, trigonometric functions, and inverse trig functions, as well as antiderivatives that can be computed using the substitution method.
-          </p>
-        </li>
-      </ul>
+      <em> Linear Equations, Matrices, and Linear Transformations </em>
     </p>
+   <ul>
+    <li>
+                <p>Students will write systems of linear equations in matrix form.</p>
+     </li>
+     <li>
+      <p>
+        Students will use elementary row operations to solve systems of linear equations.
+      </p>
+     </li>
+     <li>
+      <p>
+        Students will determine whether systems of linear equations have unique solutions, infinitely many solutions, or no solutions.
+      </p>
+     </li>
+     <li>
+      <p>
+        Students will determine whether systems of linear equations have unique solutions, infinitely many solutions, or no solutions.
+      </p>
+     </li>
+     <li>
+      <p>
+        Students will determine whether systems of linear equations have unique solutions, infinitely many solutions, or no solutions.
+      </p>
+     </li>
+     <li>
+      <p>
+        Students will understand linear independence and determine whether sets of vectors are linearly independent.
+      </p>
+     </li>
+     <li>
+      <p>
+        Students will know, understand, and apply the Invertible Matrix Theorem, and be able to prove parts of it.
+      </p>
+     </li>
+     <li>
+      <p>
+        Students will be able to use matrices and systems of linear equations in selected applications.
+      </p>
+     </li>
+</ul>
+	
+
+<p>
+  <em>Bases, Dimension, and Change of Basis</em>
+</p>
+
+<p>
+
+  <ul>
+    <li>
+      <p>
+        Students will know the definition of a basis and determine whether a given set of vectors forms a basis for a vector space.
+      </p>
+    </li>
+    <li>
+      <p>
+        Students will be able to find bases of null and column spaces of matrices.
+      </p>
+    </li>
+    <li>
+      <p>
+        Students will be able to find bases of null and column spaces of matrices.
+      </p>
+    </li>
+    <li>
+      <p>
+        Students will be able to find the matrix of a linear transformation relative to a given basis.
+      </p>
+    </li>
+    <li>
+      <p>
+        Students will use representations of linear transformations relative to advantageous bases to solve applied problems.
+      </p>
+    </li>
+  </ul>
+	
+<p>
+  <em>Eigenvalues, Eigenvectors, and Diagonalization</em>
+</p>
+
+<ul>
+  <li>
+    <p>
+      Students will know the definition of eigenvalues and eigenvectors, and be able to find them using the characteristic polynomial.
+    </p>
+  </li>
+  <li>
+    <p>
+      Students will be able to determine if a given matrix is diagonalizable.
+    </p>
+  </li>
+  <li>
+    <p>
+      Students will use diagonalization to solve applied problems.
+    </p>
+  </li>
+</ul>
+
+<p>
+  <em>Inner Product Spaces</em>
+</p>
+<ul>
+  <li>
+    <p>
+      Students will know the definition of the inner product on R^n.
+    </p>
+  </li>
+  <li>
+    <p>
+      Students will use the Gram-Schmidt process to find orthogonal bases.
+    </p>
+  </li>
+  <li>
+    <p>
+      Students will solve least squares problems.
+    </p>
+  </li>
+</ul>
+<p>
+  <em>Additional Topics Additional topics may include:</em>
+</p>
+
+<ul>
+  <li>
+    <p>
+      Matrix factorizations.
+    </p>
+  </li>
+  <li>
+    <p>
+      The Singular Value Decomposition.
+    </p>
+  </li>
+  <li>
+    <p>
+      Classification of quadratic forms.
+    </p>
+  </li>
+  <li>
+    <p>
+      Constrained optimization.
+    </p>
+  </li>
+</ul>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+</p>
+      
   </paragraphs>
 
   <paragraphs xml:id="plos">
