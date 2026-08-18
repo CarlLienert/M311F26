@@ -25,6 +25,7 @@ hasWebworkReps: false,
 hasSage: false,
 isReact: false,
 htmlPresentation: false,
+lang: "en-US",
 });
 </script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +35,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="Math 311 - Fall 2026">
 <meta property="og:description" content="Math 311 - Fall 2026">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.49"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.49"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -56,15 +57,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.14';
+eBookConfig.runestone_version = '8.2.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/prefix-runtime.18d8728f6d56e11d.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.b388362b5f43738a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -91,6 +92,16 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="ptx-embed-code-container">
 <textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
 </div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
 <h2 class="heading">Readability settings</h2>
 <button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
@@ -125,10 +136,10 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="#frontmatter" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="#land-acknowledgement" class="internal"><span class="title">Land Acknowledgement</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="#course-info" class="internal"><span class="title">Course Information</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="#los" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="#grading" class="internal"><span class="title">Course Requirements and Grading</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="#course-expectations" class="internal"><span class="title">Course Expectations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#course-expectations" class="internal"><span class="title">Course Expectations and Policies</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="#campus-policies" class="internal"><span class="title">Campus Policies</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="#los" class="internal"><span class="title">Learning Outcomes</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="#schedule" class="internal"><span class="title">Course Schedule</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
@@ -140,7 +151,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="author-name"></div>
 <div class="author-info">Mathematics Department<br>Fort Lewis College</div>
 </div>
-<div class="date">Last Updated: July 23, 2026</div>
+<div class="date">Last Updated: August 18, 2026</div>
 <div class="autopermalink" aria-hidden="true" data-description="Front Matter"><a tabindex="-1" href="#frontmatter" title="Copy heading and permalink for Front Matter" aria-label="Copy heading and permalink for Front Matter">🔗</a></div>
 </section>
 <section class="section" id="land-acknowledgement">
@@ -220,12 +231,275 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Feedback and Communication"><a tabindex="-1" href="#feedback" title="Copy heading and permalink for Paragraphs: Feedback and Communication" aria-label="Copy heading and permalink for Paragraphs: Feedback and Communication">🔗</a></div>
 </section>
 <section class="paragraphs" id="tech"><h3 class="heading"><span class="title">Technology and Software Requirements.</span></h3>
-<div class="para" id="tech-2">You will need to be able to access Canvas and the electroic resource listed above in Course Materials.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tech-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="tech-2">You will need to be able to access Canvas and the electronic resource listed above in Course Materials.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tech-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="tech-3">No electronic devices will be allowed on Exams.  Keep this in mind as you study and do the homework.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#tech-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Technology and Software Requirements"><a tabindex="-1" href="#tech" title="Copy heading and permalink for Paragraphs: Technology and Software Requirements" aria-label="Copy heading and permalink for Paragraphs: Technology and Software Requirements">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section: Course Information"><a tabindex="-1" href="#course-info" title="Copy heading and permalink for Section: Course Information" aria-label="Copy heading and permalink for Section: Course Information">🔗</a></div>
+</section>
+<section class="section" id="grading">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Requirements and Grading</span>
+</h2>
+<div class="para" id="grading-2">Final grades will be determined using the following assignment categories (descriptions below):<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Assignment Category</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Weight</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">MyLab Online Homework</td>
+<td class="l m b0 r0 l0 t0 lines">15%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Weekly Quizzes (will drop lowest 2 quiz scores)</td>
+<td class="l m b0 r0 l0 t0 lines">15%</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Three Midterm Exams</td>
+<td class="l m b0 r0 l0 t0 lines">16% each</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">Cumulative Final Exam</td>
+<td class="l m b0 r0 l0 t0 lines">22%</td>
+</tr>
+</table></div>
+<div class="para" id="grading-4">Grading Scale<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="l m b0 r0 l0 t0 lines">Letter Grade</th>
+<th scope="col" class="l m b0 r0 l0 t0 lines">Point Range (<span class="process-math">\(P\)</span>)</th>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">A</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(P &gt;93\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">A-</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(90\leq P &lt; 93\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">B+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(87\leq P &lt; 90\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">B</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(83\leq P &lt; 87\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">B-</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(80\leq P &lt; 83\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">C+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(77\leq P &lt; 80\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">C</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(73\leq P &lt; 77\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">C-</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(70\leq P &lt; 73\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">D+</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(67\leq P &lt; 70\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">D</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(63\leq P &lt; 67\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">D-</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(60\leq P &lt; 63\)</span></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">F</td>
+<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(P &lt; 60\)</span></td>
+</tr>
+</table></div>
+<section class="paragraphs" id="webwork"><h3 class="heading"><span class="title">MyLab.</span></h3>
+<div class="para" id="webwork-2">Homework will be assigned and completed via MyLab.  This is integrated within Canvas.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#webwork-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="webwork-3">It is important to keep on pace, so homework will typically be due before the next class meeting.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#webwork-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: MyLab"><a tabindex="-1" href="#webwork" title="Copy heading and permalink for Paragraphs: MyLab" aria-label="Copy heading and permalink for Paragraphs: MyLab">🔗</a></div>
+</section>
+<section class="paragraphs" id="weekly-activities"><h3 class="heading"><span class="title">Weekly Quizzes.</span></h3>
+<div class="para" id="weekly-activities-2">There will be at least one quiz each non-exam week.  These may be unannounced.  Questions on the quizzes will be similar to those on the homework.  If you can answer the homework questions, you will be able to answer the quiz questions. Keep in mind that no electronic devices are allowed during quizzes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#weekly-activities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="weekly-activities-3">To account for missed quizzes due to unforseen circumstances, I will drop the lowest 2 scores at the end of the term.  No make-up quizzes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#weekly-activities-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Quizzes"><a tabindex="-1" href="#weekly-activities" title="Copy heading and permalink for Paragraphs: Weekly Quizzes" aria-label="Copy heading and permalink for Paragraphs: Weekly Quizzes">🔗</a></div>
+</section>
+<section class="paragraphs" id="midterm-exams"><h3 class="heading"><span class="title">Midterm Exams.</span></h3>
+<div class="para logical" id="midterm-exams-2">
+<div class="para">There will be three midterm exams:</div>
+<ul class="disc" id="midterm-exams-2-1">
+<li id="midterm-exams-2-1-1">
+<div class="para" id="midterm-exams-2-1-1-1">Monday, 21-September<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#midterm-exams-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="midterm-exams-2-1-2">
+<div class="para" id="midterm-exams-2-1-2-1">Wednesday, 21-October<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#midterm-exams-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="midterm-exams-2-1-3">
+<div class="para" id="midterm-exams-2-1-3-1">Friday, 20-November (this is the Friday before break, please do no plan to leave early)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#midterm-exams-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Midterm Exams"><a tabindex="-1" href="#midterm-exams" title="Copy heading and permalink for Paragraphs: Midterm Exams" aria-label="Copy heading and permalink for Paragraphs: Midterm Exams">🔗</a></div>
+</section>
+<section class="paragraphs" id="final"><h3 class="heading"><span class="title">Cumulative Final Exam.</span></h3>
+<div class="para" id="final-2">Your cumulative final exam will be Tuesday, 8-December, from 7:30-9:30am.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#final-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Cumulative Final Exam"><a tabindex="-1" href="#final" title="Copy heading and permalink for Paragraphs: Cumulative Final Exam" aria-label="Copy heading and permalink for Paragraphs: Cumulative Final Exam">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Course Requirements and Grading"><a tabindex="-1" href="#grading" title="Copy heading and permalink for Section: Course Requirements and Grading" aria-label="Copy heading and permalink for Section: Course Requirements and Grading">🔗</a></div>
+</section>
+<section class="section" id="course-expectations">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Expectations and Policies</span>
+</h2>
+<section class="paragraphs" id="course-expectations-2"><h3 class="heading"><span class="title">Save Your Spot.</span></h3>
+<div class="para" id="course-expectations-2-2">Stay enrolled in this and your other courses this term by attending class and participating in required course activities during the first week of the term. Instructors have the option to disenroll a student from a class if the student has missed at least one scheduled class in person or via Zoom or required online course activity for online courses (check your syllabus for information) during the first 4 days of the week in which the course is scheduled to meet for the first time. This allows students who are on the course waitlist to be added to the course.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Save Your Spot"><a tabindex="-1" href="#course-expectations-2" title="Copy heading and permalink for Paragraphs: Save Your Spot" aria-label="Copy heading and permalink for Paragraphs: Save Your Spot">🔗</a></div>
+</section>
+<section class="paragraphs" id="course-expectations-3"><h3 class="heading"><span class="title">Course Workload and Time Management.</span></h3>
+<div class="para" id="course-expectations-3-2">A standard time managment guidline is that you should expect to spend 2-3 hours outside of class studying for each hour of class time.  For this 4-hour class, that means you should spend 8-12 hours per week studying outside of class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Course Workload and Time Management"><a tabindex="-1" href="#course-expectations-3" title="Copy heading and permalink for Paragraphs: Course Workload and Time Management" aria-label="Copy heading and permalink for Paragraphs: Course Workload and Time Management">🔗</a></div>
+</section>
+<section class="paragraphs" id="course-expectations-4"><h3 class="heading"><span class="title">A.I. policy.</span></h3>
+<div class="para" id="course-expectations-4-2">Electronic devices and GAI use is forbidden on all exams and quizzes in this class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="course-expectations-4-3">How you use AI outside of class to study or complete homework is, of course, your decision. I encourage you to use it (or not) in a way that will translate to being able to answer questions on quizzes and exams during which you will not have access to AI.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: A.I. policy"><a tabindex="-1" href="#course-expectations-4" title="Copy heading and permalink for Paragraphs: A.I. policy" aria-label="Copy heading and permalink for Paragraphs: A.I. policy">🔗</a></div>
+</section>
+<section class="paragraphs" id="course-expectations-5"><h3 class="heading"><span class="title">Recording Policy.</span></h3>
+<div class="para" id="course-expectations-5-2">In this class, students may not make audio or video recordings of any course activity unless the student has an approved accommodation from the Accessibility Resource Center permitting the recording of class meetings. In such cases, the accommodation letter must be presented to the instructor in advance of any recording and all students in the course will be notified whenever recording is taking place. Students who are permitted to record classes are not permitted to redistribute audio or video recordings from the course. Distribution without permission is a violation of federal educational privacy law.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Recording Policy"><a tabindex="-1" href="#course-expectations-5" title="Copy heading and permalink for Paragraphs: Recording Policy" aria-label="Copy heading and permalink for Paragraphs: Recording Policy">🔗</a></div>
+</section>
+<section class="paragraphs" id="course-expectations-6"><h3 class="heading"><span class="title">Classroom Expectations.</span></h3>
+<div class="para logical" id="course-expectations-6-2">
+<div class="para">Please be respectful of your peers and your instructor:</div>
+<ul class="disc" id="course-expectations-6-2-1">
+<li id="course-expectations-6-2-1-1">
+<div class="para" id="course-expectations-6-2-1-1-1">Be in class on time.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-6-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#course-expectations-6-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="course-expectations-6-2-1-2">
+<div class="para" id="course-expectations-6-2-1-2-1">Do not come and go during class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-6-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#course-expectations-6-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="course-expectations-6-2-1-3">
+<div class="para" id="course-expectations-6-2-1-3-1">Put your phone away.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-6-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#course-expectations-6-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Classroom Expectations"><a tabindex="-1" href="#course-expectations-6" title="Copy heading and permalink for Paragraphs: Classroom Expectations" aria-label="Copy heading and permalink for Paragraphs: Classroom Expectations">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Course Expectations and Policies"><a tabindex="-1" href="#course-expectations" title="Copy heading and permalink for Section: Course Expectations and Policies" aria-label="Copy heading and permalink for Section: Course Expectations and Policies">🔗</a></div>
+</section>
+<section class="section" id="campus-policies">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Campus Policies</span>
+</h2>
+<section class="paragraphs" id="campus-policies-2"><h3 class="heading"><span class="title">Academic Integrity.</span></h3>
+<div class="para" id="campus-policies-2-2">
+<dfn class="terminology">What is Academic Integrity?</dfn> Integrity is the College-wide expectation that students follow established guidelines and common knowledge to maintain ethical standards in their work.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-2-3">
+<dfn class="terminology">Why does it matter?</dfn> Integrity in academic matters is vital to all members of the College community. An academic integrity violation by a student devalues the accomplishments of other students, threatens the integrity of the College, and undermines the College’s educational mission. During their time at FLC, students are expected to know, understand, and comply with the ethical standards of the College.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-2-4">
+<dfn class="terminology">What is Academic Dishonesty?</dfn> Academic dishonesty is defined as any form of unethical or illegal behavior regarding any academic work--with or without intent. These standards apply to all courses taken on or off campus, and all modes of course delivery.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-2-5">Examples of academic dishonesty include, but are not limited to, the following:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<ul class="disc" id="campus-policies-2-6">
+<li id="campus-policies-2-6-1">
+<div class="para" id="campus-policies-2-6-1-1">plagiarism,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="campus-policies-2-6-2">
+<div class="para" id="campus-policies-2-6-2-1">cheating,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="campus-policies-2-6-3">
+<div class="para" id="campus-policies-2-6-3-1">fabrication and falsification,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="campus-policies-2-6-4">
+<div class="para" id="campus-policies-2-6-4-1">multiple submissions/self-plagiarism,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="campus-policies-2-6-5">
+<div class="para" id="campus-policies-2-6-5-1">misuse of academic materials,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="campus-policies-2-6-6">
+<div class="para" id="campus-policies-2-6-6-1">unapproved and uncredited use of artificial intelligence,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="campus-policies-2-6-7">
+<div class="para" id="campus-policies-2-6-7-1">and complicity in academic dishonesty.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para" id="campus-policies-2-7">See the full definition of academic dishonesty here: <a class="external" href="https://www.fortlewis.edu/Portals/7/assets/academic-affairs/docs/FLCs-Definition-of-Academic-Dishonesty.pdf?ver=w3pyLcHGkI4aT0023xWlTg%3d%3d" target="_blank">FLCs-Definition-of-Academic-Dishonesty.</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-2-8">If a faculty member alleges that you have committed an academic integrity violation, they will communicate with you and explain the alleged charges and then submit a report of academic dishonesty using this form: <a class="external" href="https://cm.maxient.com/reportingform.php?FortLewisCollege&amp;layout_id=28" target="_blank">Report of Academic Dishonesty.</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-2-9">Faculty may use any legal and ethical method when identifying an academic integrity violation, including the use of plagiarism detection software and artificial intelligence detection software.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-2-10">
+<dfn class="terminology">What are the consequences?</dfn> In-class consequences for a charge can range from a reduced grade or zero on the assignment to a reduced grade or “F” in the course. College-wide consequences can range from academic intervention to suspension or expulsion.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Academic Integrity"><a tabindex="-1" href="#campus-policies-2" title="Copy heading and permalink for Paragraphs: Academic Integrity" aria-label="Copy heading and permalink for Paragraphs: Academic Integrity">🔗</a></div>
+</section>
+<section class="paragraphs" id="campus-policies-3"><h3 class="heading"><span class="title">Digital Accessibility.</span></h3>
+<div class="para" id="campus-policies-3-2">Fort Lewis College commits to ensuring that information technology and digital content it creates or distributes in its programs, services and activities is accessible to all individuals. The <a class="external" href="https://www.fortlewis.edu/administrative-offices/committees/college-committees/accessibility/digital-accessibility-policy" target="_blank">Policy on Accessibility of Information Technology and Digital Content</a> reflects Fort Lewis College’s commitment to providing access to information technology and digital content to all FLC students, employees and the general public.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Digital Accessibility"><a tabindex="-1" href="#campus-policies-3" title="Copy heading and permalink for Paragraphs: Digital Accessibility" aria-label="Copy heading and permalink for Paragraphs: Digital Accessibility">🔗</a></div>
+</section>
+<section class="paragraphs" id="campus-policies-4"><h3 class="heading"><span class="title">Accessibility Resource Center.</span></h3>
+<div class="para" id="campus-policies-4-2">The Accessibility Resource Center provides inclusive, personalized, caring accommodations for students needing disability-related support. Students are encouraged to reach out to learn more and register for services.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-4-3">Visit their <a class="external" href="https://www.fortlewis.edu/life-at-flc/student-services/accessibility-resource-center/accessibility-resource-center-home" target="_blank">website</a> or email accessibilityresources@fortlewis.edu or call 970-247-7383.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Accessibility Resource Center"><a tabindex="-1" href="#campus-policies-4" title="Copy heading and permalink for Paragraphs: Accessibility Resource Center" aria-label="Copy heading and permalink for Paragraphs: Accessibility Resource Center">🔗</a></div>
+</section>
+<section class="paragraphs" id="campus-policies-5"><h3 class="heading"><span class="title">Course Withdrawal Policy.</span></h3>
+<div class="para" id="campus-policies-5-2"> The last day to withdraw from FLC classes with a grade of “CW” (course withdrawal) is published on the Registrar’s website.  This is a college-wide deadline that is not negotiable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="campus-policies-5-3">To withdraw from a course using a CW, fill out our online <a class="external" href="https://www.fortlewis.edu/withdrawal" target="_blank">Withdrawal From Course Form</a> at your <a class="external" href="https://www.fortlewis.edu/studentresourcecenter" target="_blank">Student Resource Center</a>. You can also visit Skyhawk Station and pick up a Course Withdrawal form, and our staff will process the CW for you on the spot. This Course Withdrawal will not affect your financial aid for this term, and you will still owe the full amount for the class on your student bill. You should also be aware that dropping a course could affect your Pace Towards Graduation, impacting your eligibility for Financial Aid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Course Withdrawal Policy"><a tabindex="-1" href="#campus-policies-5" title="Copy heading and permalink for Paragraphs: Course Withdrawal Policy" aria-label="Copy heading and permalink for Paragraphs: Course Withdrawal Policy">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section: Campus Policies"><a tabindex="-1" href="#campus-policies" title="Copy heading and permalink for Section: Campus Policies" aria-label="Copy heading and permalink for Section: Campus Policies">🔗</a></div>
 </section>
 <section class="section" id="los">
 <h2 class="heading hide-type">
@@ -421,263 +695,6 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Program Learning Outcomes"><a tabindex="-1" href="#plos" title="Copy heading and permalink for Paragraphs: Program Learning Outcomes" aria-label="Copy heading and permalink for Paragraphs: Program Learning Outcomes">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section: Learning Outcomes"><a tabindex="-1" href="#los" title="Copy heading and permalink for Section: Learning Outcomes" aria-label="Copy heading and permalink for Section: Learning Outcomes">🔗</a></div>
-</section>
-<section class="section" id="grading">
-<h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Requirements and Grading</span>
-</h2>
-<div class="para" id="grading-2">Final grades will be determined using the following assignment categories (descriptions below):<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="l m b0 r0 l0 t0 lines">Assignment Category</th>
-<th scope="col" class="l m b0 r0 l0 t0 lines">Weight</th>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">MyLab Online Homework</td>
-<td class="l m b0 r0 l0 t0 lines">15%</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">Weekly Quizzes (will drop lowest 2 quiz scores)</td>
-<td class="l m b0 r0 l0 t0 lines">15%</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">Three Midterm Exams</td>
-<td class="l m b0 r0 l0 t0 lines">16% each</td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">Cumulative Final Exam</td>
-<td class="l m b0 r0 l0 t0 lines">22%</td>
-</tr>
-</table></div>
-<div class="para" id="grading-4">Grading Scale<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#grading-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="tabular-box natural-width"><table class="tabular">
-<tr class="header-horizontal">
-<th scope="col" class="l m b0 r0 l0 t0 lines">Letter Grade</th>
-<th scope="col" class="l m b0 r0 l0 t0 lines">Point Range (<span class="process-math">\(P\)</span>)</th>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">A</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(P &gt;93\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">A-</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(90\leq P &lt; 93\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">B+</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(87\leq P &lt; 90\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">B</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(83\leq P &lt; 87\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">B-</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(80\leq P &lt; 83\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">C+</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(77\leq P &lt; 80\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">C</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(73\leq P &lt; 77\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">C-</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(70\leq P &lt; 73\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">D+</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(67\leq P &lt; 70\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">D</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(63\leq P &lt; 67\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">D-</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(60\leq P &lt; 63\)</span></td>
-</tr>
-<tr>
-<td class="l m b0 r0 l0 t0 lines">F</td>
-<td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(P &lt; 60\)</span></td>
-</tr>
-</table></div>
-<section class="paragraphs" id="webwork"><h3 class="heading"><span class="title">MyLab.</span></h3>
-<div class="para" id="webwork-2">Homework will be assigned and completed via MyLab.  This is integrated within Canvas.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#webwork-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="webwork-3">It is important to keep on pace, so homework will typically be due before the next class meeting.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#webwork-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: MyLab"><a tabindex="-1" href="#webwork" title="Copy heading and permalink for Paragraphs: MyLab" aria-label="Copy heading and permalink for Paragraphs: MyLab">🔗</a></div>
-</section>
-<section class="paragraphs" id="weekly-activities"><h3 class="heading"><span class="title">Weekly Quizzes.</span></h3>
-<div class="para" id="weekly-activities-2">There will be at least one quiz each non-exam week.  These may be unannounced.  Questions on the quizzes will be similar to those on the homework.  If you can answer the homework questions, you will be able to answer the quiz questions. Keep in mind that no electronic devices are allowed during quizzes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#weekly-activities-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="weekly-activities-3">To account for missed quizzes due to unforseen circumstances, I will drop the lowest 2 scores at the end of the term.  No make-up quizzes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#weekly-activities-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Weekly Quizzes"><a tabindex="-1" href="#weekly-activities" title="Copy heading and permalink for Paragraphs: Weekly Quizzes" aria-label="Copy heading and permalink for Paragraphs: Weekly Quizzes">🔗</a></div>
-</section>
-<section class="paragraphs" id="midterm-exams"><h3 class="heading"><span class="title">Midterm Exams.</span></h3>
-<div class="para logical" id="midterm-exams-2">
-<div class="para">There will be three midterm exams:</div>
-<ul class="disc" id="midterm-exams-2-1">
-<li id="midterm-exams-2-1-1">
-<div class="para" id="midterm-exams-2-1-1-1">Monday, 21-September<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#midterm-exams-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="midterm-exams-2-1-2">
-<div class="para" id="midterm-exams-2-1-2-1">Wednesday, 21-October<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#midterm-exams-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="midterm-exams-2-1-3">
-<div class="para" id="midterm-exams-2-1-3-1">Friday, 20-November (this is the Friday before break, please do no plan to leave early)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#midterm-exams-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#midterm-exams-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Midterm Exams"><a tabindex="-1" href="#midterm-exams" title="Copy heading and permalink for Paragraphs: Midterm Exams" aria-label="Copy heading and permalink for Paragraphs: Midterm Exams">🔗</a></div>
-</section>
-<section class="paragraphs" id="final"><h3 class="heading"><span class="title">Cumulative Final Exam.</span></h3>
-<div class="para" id="final-2">Your cumulative final exam will be Tuesday, 8-December, from 7:30-9:30am.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#final-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Cumulative Final Exam"><a tabindex="-1" href="#final" title="Copy heading and permalink for Paragraphs: Cumulative Final Exam" aria-label="Copy heading and permalink for Paragraphs: Cumulative Final Exam">🔗</a></div>
-</section><div class="autopermalink" aria-hidden="true" data-description="Section: Course Requirements and Grading"><a tabindex="-1" href="#grading" title="Copy heading and permalink for Section: Course Requirements and Grading" aria-label="Copy heading and permalink for Section: Course Requirements and Grading">🔗</a></div>
-</section>
-<section class="section" id="course-expectations">
-<h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Course Expectations</span>
-</h2>
-<section class="paragraphs" id="course-expectations-2"><h3 class="heading"><span class="title">Save Your Spot.</span></h3>
-<div class="para" id="course-expectations-2-2">Stay enrolled in this and your other courses this term by attending class and participating in required course activities during the first week of the term. Instructors have the option to disenroll a student from a class if the student has missed at least one scheduled class in person or via Zoom or required online course activity for online courses (check your syllabus for information) during the first 4 days of the week in which the course is scheduled to meet for the first time. This allows students who are on the course waitlist to be added to the course.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Save Your Spot"><a tabindex="-1" href="#course-expectations-2" title="Copy heading and permalink for Paragraphs: Save Your Spot" aria-label="Copy heading and permalink for Paragraphs: Save Your Spot">🔗</a></div>
-</section>
-<section class="paragraphs" id="course-expectations-3"><h3 class="heading"><span class="title">Course Workload and Time Management.</span></h3>
-<div class="para" id="course-expectations-3-2">A standard time managment guidline is that you should expect to spend 2-3 hours outside of class studying for each hour of class time.  For this 4-hour class, that means you should spend 8-12 hours per week studying outside of class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Course Workload and Time Management"><a tabindex="-1" href="#course-expectations-3" title="Copy heading and permalink for Paragraphs: Course Workload and Time Management" aria-label="Copy heading and permalink for Paragraphs: Course Workload and Time Management">🔗</a></div>
-</section>
-<section class="paragraphs" id="course-expectations-4"><h3 class="heading"><span class="title">Classroom Expectations.</span></h3>
-<div class="para logical" id="course-expectations-4-2">
-<div class="para">Please be respectful of your peers and your instructor:</div>
-<ul class="disc" id="course-expectations-4-2-1">
-<li id="course-expectations-4-2-1-1">
-<div class="para" id="course-expectations-4-2-1-1-1">Be in class on time.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#course-expectations-4-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="course-expectations-4-2-1-2">
-<div class="para" id="course-expectations-4-2-1-2-1">Do not come and go during class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-4-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#course-expectations-4-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="course-expectations-4-2-1-3">
-<div class="para" id="course-expectations-4-2-1-3-1">Put your phone away.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-4-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#course-expectations-4-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#course-expectations-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Classroom Expectations"><a tabindex="-1" href="#course-expectations-4" title="Copy heading and permalink for Paragraphs: Classroom Expectations" aria-label="Copy heading and permalink for Paragraphs: Classroom Expectations">🔗</a></div>
-</section><div class="autopermalink" aria-hidden="true" data-description="Section: Course Expectations"><a tabindex="-1" href="#course-expectations" title="Copy heading and permalink for Section: Course Expectations" aria-label="Copy heading and permalink for Section: Course Expectations">🔗</a></div>
-</section>
-<section class="section" id="campus-policies">
-<h2 class="heading hide-type">
-<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Campus Policies</span>
-</h2>
-<section class="paragraphs" id="campus-policies-2"><h3 class="heading"><span class="title">Academic Integrity.</span></h3>
-<div class="para" id="campus-policies-2-2">
-<dfn class="terminology">What is Academic Integrity?</dfn> Integrity is the College-wide expectation that students follow established guidelines and common knowledge to maintain ethical standards in their work.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-3">
-<dfn class="terminology">Why does it matter?</dfn> Integrity in academic matters is vital to all members of the College community. An academic integrity violation by a student devalues the accomplishments of other students, threatens the integrity of the College, and undermines the College’s educational mission. During their time at FLC, students are expected to know, understand, and comply with the ethical standards of the College.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-4">
-<dfn class="terminology">What is Academic Dishonesty?</dfn> Academic dishonesty is defined as any form of unethical or illegal behavior regarding any academic work--with or without intent. These standards apply to all courses taken on or off campus, and all modes of course delivery.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-5">Examples of academic dishonesty include, but are not limited to, the following:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<ul class="disc" id="campus-policies-2-6">
-<li id="campus-policies-2-6-1">
-<div class="para" id="campus-policies-2-6-1-1">plagiarism,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="campus-policies-2-6-2">
-<div class="para" id="campus-policies-2-6-2-1">cheating,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="campus-policies-2-6-3">
-<div class="para" id="campus-policies-2-6-3-1">fabrication and falsification,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="campus-policies-2-6-4">
-<div class="para" id="campus-policies-2-6-4-1">multiple submissions/self-plagiarism,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="campus-policies-2-6-5">
-<div class="para" id="campus-policies-2-6-5-1">misuse of academic materials,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="campus-policies-2-6-6">
-<div class="para" id="campus-policies-2-6-6-1">unapproved and uncredited use of artificial intelligence,<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="campus-policies-2-6-7">
-<div class="para" id="campus-policies-2-6-7-1">and complicity in academic dishonesty.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-6-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#campus-policies-2-6-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="para" id="campus-policies-2-7">See the full definition of academic dishonesty here: <a class="external" href="https://www.fortlewis.edu/Portals/7/assets/academic-affairs/docs/FLCs-Definition-of-Academic-Dishonesty.pdf?ver=w3pyLcHGkI4aT0023xWlTg%3d%3d" target="_blank">FLCs-Definition-of-Academic-Dishonesty.</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-8">If a faculty member alleges that you have committed an academic integrity violation, they will communicate with you and explain the alleged charges and then submit a report of academic dishonesty using this form: <a class="external" href="https://cm.maxient.com/reportingform.php?FortLewisCollege&amp;layout_id=28" target="_blank">Report of Academic Dishonesty.</a><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-9">Faculty may use any legal and ethical method when identifying an academic integrity violation, including the use of plagiarism detection software and artificial intelligence detection software.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-10">
-<dfn class="terminology">What are the consequences?</dfn> In-class consequences for a charge can range from a reduced grade or zero on the assignment to a reduced grade or “F” in the course. College-wide consequences can range from academic intervention to suspension or expulsion.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-11"> <dfn class="terminology">Course Policy on use of Generative Artificial Intelligence:</dfn><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-12">Electronic devices and GAI use is forbidden on all exams and quizzes in this class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-2-13">How you use AI outside of class to study or complete homework is, of course, your decision. I encourage you to use it (or not) in a way that will translate to being able to answer questions on quizzes and exams during which you will not have access to AI.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Academic Integrity"><a tabindex="-1" href="#campus-policies-2" title="Copy heading and permalink for Paragraphs: Academic Integrity" aria-label="Copy heading and permalink for Paragraphs: Academic Integrity">🔗</a></div>
-</section>
-<section class="paragraphs" id="campus-policies-3"><h3 class="heading"><span class="title">Digital Accessibility.</span></h3>
-<div class="para" id="campus-policies-3-2">Fort Lewis College commits to ensuring that information technology and digital content it creates or distributes in its programs, services and activities is accessible to all individuals. The <a class="external" href="https://www.fortlewis.edu/administrative-offices/committees/college-committees/accessibility/digital-accessibility-policy" target="_blank">Policy on Accessibility of Information Technology and Digital Content</a> reflects Fort Lewis College’s commitment to providing access to information technology and digital content to all FLC students, employees and the general public.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Digital Accessibility"><a tabindex="-1" href="#campus-policies-3" title="Copy heading and permalink for Paragraphs: Digital Accessibility" aria-label="Copy heading and permalink for Paragraphs: Digital Accessibility">🔗</a></div>
-</section>
-<section class="paragraphs" id="campus-policies-4"><h3 class="heading"><span class="title">Accessibility Resource Center.</span></h3>
-<div class="para" id="campus-policies-4-2">The Accessibility Resource Center provides inclusive, personalized, caring accommodations for students needing disability-related support. Students are encouraged to reach out to learn more and register for services.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-4-3">Visit their <a class="external" href="https://www.fortlewis.edu/life-at-flc/student-services/accessibility-resource-center/accessibility-resource-center-home" target="_blank">website</a> or email accessibilityresources@fortlewis.edu or call 970-247-7383.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Accessibility Resource Center"><a tabindex="-1" href="#campus-policies-4" title="Copy heading and permalink for Paragraphs: Accessibility Resource Center" aria-label="Copy heading and permalink for Paragraphs: Accessibility Resource Center">🔗</a></div>
-</section>
-<section class="paragraphs" id="campus-policies-5"><h3 class="heading"><span class="title">Course Withdrawal Policy.</span></h3>
-<div class="para" id="campus-policies-5-2"> The last day to withdraw from FLC classes with a grade of “CW” (course withdrawal) is published on the Registrar’s website.  This is a college-wide deadline that is not negotiable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="campus-policies-5-3">To withdraw from a course using a CW, fill out our online <a class="external" href="https://www.fortlewis.edu/withdrawal" target="_blank">Withdrawal From Course Form</a> at your <a class="external" href="https://www.fortlewis.edu/studentresourcecenter" target="_blank">Student Resource Center</a>. You can also visit Skyhawk Station and pick up a Course Withdrawal form, and our staff will process the CW for you on the spot. This Course Withdrawal will not affect your financial aid for this term, and you will still owe the full amount for the class on your student bill. You should also be aware that dropping a course could affect your Pace Towards Graduation, impacting your eligibility for Financial Aid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#campus-policies-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraphs: Course Withdrawal Policy"><a tabindex="-1" href="#campus-policies-5" title="Copy heading and permalink for Paragraphs: Course Withdrawal Policy" aria-label="Copy heading and permalink for Paragraphs: Course Withdrawal Policy">🔗</a></div>
-</section><div class="autopermalink" aria-hidden="true" data-description="Section: Campus Policies"><a tabindex="-1" href="#campus-policies" title="Copy heading and permalink for Section: Campus Policies" aria-label="Copy heading and permalink for Section: Campus Policies">🔗</a></div>
 </section>
 <section class="section" id="schedule">
 <h2 class="heading hide-type">
