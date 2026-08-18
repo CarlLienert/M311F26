@@ -20,10 +20,7 @@
   <!--include course info-->
   <xi:include href="./syllabus/syllabus-course-info.ptx" />
 
-  <!--include learning outcomes-->
-  <!--include appropriate file for indicated GTPathways courses-->
-  <!--otherwise include learning outcomes for the course you are teaching (should be on Sharepoint)-->
-  <xi:include href="./syllabus/311syllabus-learning-outcomes.ptx" />
+ 
 
   <!--include grading scheme and assignment types-->
   <xi:include href="./syllabus/syllabus-grading.ptx" />
@@ -35,6 +32,11 @@
   <xi:include href="./syllabus/syllabus-campus-policies.ptx" />
 
   <!--inlcude basic needs etc.-->
+
+   <!--include learning outcomes-->
+  <!--include appropriate file for indicated GTPathways courses-->
+  <!--otherwise include learning outcomes for the course you are teaching (should be on Sharepoint)-->
+  <xi:include href="./syllabus/311syllabus-learning-outcomes.ptx" />
   <!--
   <xi:include href="./syllabus/syllabus-student-resources.ptx" />
   -->
