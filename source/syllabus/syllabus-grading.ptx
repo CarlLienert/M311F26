@@ -9,16 +9,16 @@
         <cell>Assignment Category</cell> <cell>Weight</cell>
       </row>
       <row>
-        <cell>MyLab Online Homework </cell> <cell>15%</cell>
+        <cell>Homework </cell> <cell>14%</cell>
       </row>
       <row>
-        <cell>Weekly Quizzes (will drop lowest 2 quiz scores) </cell> <cell>15%</cell>
+        <cell>Weekly Quizzes </cell> <cell>14%</cell>
       </row>
       <row>
-        <cell>Three Midterm Exams</cell> <cell>16% each</cell>
+        <cell>Four Midterm Exams</cell> <cell>14% each</cell>
       </row>
       <row>
-        <cell>Cumulative Final Exam</cell> <cell>22%</cell>
+        <cell>Cumulative Final Exam</cell> <cell>16%</cell>
       </row>
     </tabular>
     <p>
@@ -68,14 +68,12 @@
 
   
   <paragraphs xml:id="webwork">
-    <title>MyLab</title>
+    <title>Homework</title>
     <p>
-     Homework will be assigned and completed via MyLab.  This is integrated within Canvas.
+     Homework will be assigned regularly.  I'll collect it the old fashioned way: paper and pencil. I won't use AI to grade your homework. In return I ask that you refrain from using AI to complete your homework.  I'm not interested in what AI can do, I'm interested in what you can do.   
     </p>
     
-    <p>
-      It is important to keep on pace, so homework will typically be due before the next class meeting.
-    </p>
+   
   </paragraphs>
   <paragraphs xml:id="weekly-activities">
     <title>Weekly Quizzes</title>
@@ -105,21 +103,26 @@
   <paragraphs xml:id="midterm-exams">
     <title>Midterm Exams</title>
     <p>
-      There will be three midterm exams: 
+      There will be four midterm exams. These will be oral exams. 
       <ul>
         <li>
           <p>
-            Monday, 21-September
+            Friday, 29-January
           </p>
         </li>
         <li>
           <p>
-            Wednesday, 21-October
+            Friday, 19-February
           </p>
         </li>
         <li>
           <p>
-            Friday, 20-November (this is the Friday before break, please do no plan to leave early)
+            Friday, 12-March
+          </p>
+        </li>
+        <li>
+          <p>
+            Friday, 9-March
           </p>
         </li>
       </ul>
@@ -128,7 +131,7 @@
   <paragraphs xml:id="final">
     <title>Cumulative Final Exam</title>
     <p>
-      Your cumulative final exam will be Tuesday, 8-December, from 7:30-9:30am. 
+      Your cumulative final exam will be Wednesday, 28-April, from 12-2. 
     </p>
   </paragraphs>
 </section>

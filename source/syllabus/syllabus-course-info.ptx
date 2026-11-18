@@ -5,12 +5,12 @@
       <dl>
         <li><title>Course Title</title>
           <p>
-            Matrices and Linear Algebra
+            Complex Variables
           </p>
         </li>
         <li><title>Course Number</title>
           <p>
-            MATH 311
+            MATH 430
           </p>
         </li>
         <li><title>Credits</title>
@@ -21,7 +21,7 @@
         <li><title>Times and Rooms</title>
         <!--e.g.-->
         <p>
-           9:05-10:00am, MWF Berndt 340
+           2:30-3:25, MWF EBH 40
         </p>
     </li>
         <li><title>Instructor</title>
@@ -38,10 +38,13 @@
     <title>Course Description</title>
     <p>
       
-      A study of the properties and applications of matrices, including systems of equations, determinants, factorizations, and eigenvalues. An introduction to vector spaces and linear transformations.  
+      
+This course will cover topics in complex numbers, analytic functions. Other topics may include: elementary functions and associated mappings, integrals, series, residues and poles, and conformal mappings. 
     </p>
     <p>
-      Prerequisites: MATH 222 - Calculus II with grade greater than or equal to C- (Undergraduate Grading Scheme).
+      Prerequisites: 
+
+Student has completed any 3 of the following course(s): MATH 302 - Point-Set Topology, MATH 313 - Combinatorics, MATH 316 - Number Theory, MATH 342 - Modern College Geometry with grade greater than or equal to C- (Undergraduate Grading Scheme).
     </p>
   </paragraphs>
 
@@ -53,12 +56,9 @@
   <paragraphs xml:id="course-materials">
     <title>Course Materials</title>
     <p>
-      MyLab Math with Pearson eText Access Code (18 Weeks) for Linear Algebra and Its Applications (ISBN: 9780135851159)
+      Fundamentals of Complex Analysis with Applications to Engineering and Science, 3rd Edition, by E. B. Saff and A. D. Snider, Pearson. 
     </p>
-    <p>
-
-      You will automatically have access to this resource on Canvas via Inclusive Access.  Your student account will be billed.  You may opt out, BUT you are required to submit homework via this resource.
-    </p>
+  
   </paragraphs>
 
   <paragraphs xml:id="office-hours">
